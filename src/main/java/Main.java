@@ -1,4 +1,6 @@
-import java.util.Arrays;
+import services.PairFinder;
+
+import java.util.ArrayList;
 
 import static services.Converter.StringArrToIntArr;
 
@@ -6,9 +8,12 @@ public class Main {
 
     public static void main(String[] args) {
 
+        PairFinder pairFinder = new PairFinder();
+
         int[] input = StringArrToIntArr(args);
-        System.out.println("HELLO");
-        Arrays.stream(input).forEach(System.out::println);
+
+        ArrayList<String> result = pairFinder.findPairThatSumsTo13(input);
+        result.forEach(System.out::println);
     }
 
 }
