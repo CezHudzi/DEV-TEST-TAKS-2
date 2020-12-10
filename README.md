@@ -8,7 +8,7 @@ Application finds all pairs (in this integer list) that sum up to 13.
   1) First number not greater than the second 
   2) Lines should be sorted in an ascending order.
 
-Algorithm: 
+Algorithm: <br>
 First step: input is sorted by quickSort algorithm with random pivot selection.
 
 Second step: algorithm takes min number (x) and start searching from left to right.
